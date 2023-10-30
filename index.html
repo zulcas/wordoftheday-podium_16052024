@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css"
+        integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Puntuación Final</title>
+    <style>
+        .podium {
+            display: flex;
+        }
+
+        .stand {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .place-number {
+            font-size: 24px;
+            color: #777;
+            font-weight: bold;
+        }
+
+        .player-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score {
+            font-size: 20px;
+            color: #0c0b0a;
+        }
+
+        .first-place {
+            background-color: #ffd700;
+        }
+
+        .second-place {
+            background-color: #c0c0c0;
+        }
+
+        .third-place {
+            background-color: #cd7f32;
+        }
+
+        .stand {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin: 0 10px;
+        }
+
+        button {
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="podium">
+            <div class="stand first-place">
+                <div class="place-number">1st</div>
+                <div class="player-name">Player 1</div>
+                <div class="score">1000 points</div>
+            </div>
+            <div class="stand second-place">
+                <div class="place-number">2nd</div>
+                <div class="player-name">Player 2</div>
+                <div class="score">800 points</div>
+            </div>
+            <div class="stand third-place">
+                <div class="place-number">3rd</div>
+                <div class="player-name">Player 3</div>
+                <div class="score">600 points</div>
+            </div>
+        </div>
+        <div>
+            <button>
+                Actualizar Podium
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>
