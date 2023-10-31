@@ -12,6 +12,10 @@ En esta [Web](https://score-word-of-the-dat.onrender.com/) podemos encontrar la 
 2. Fíjate bien en el tipo de datos que devuelve la llamada
 3. Actualiza el nombre del jugador y las palabras adivinadas en cada nodo del DOM correspondiente. Es decir, el jugador con más punto, tiene que ir en el podio amarillo. Añade los ids que necesites.
 
+## BONUS
+
+1. Crea una lista completa mostrando la relación de palabras adivinadas por cada alumno/a.
+
 ### Creaciónde la API
 
 Si tienes curiosidad, este es el repo que contiene la creación de la [API](https://github.com/omiras/score-wordoftheday)
