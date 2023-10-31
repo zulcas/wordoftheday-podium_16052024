@@ -10,7 +10,7 @@ En esta [Web](https://score-word-of-the-dat.onrender.com/) podemos encontrar la 
 
 1. Al hacer click en el botón _Actualizar Podium_ , debemos hacer una peticion GET mediante _fetch_ a la URL adecuada
 2. Fíjate bien en el tipo de datos que devuelve la llamada
-3. Actualiza el nombre del jugador y las palabras adivinadas en cada nodo del DOM correspondiente
+3. Actualiza el nombre del jugador y las palabras adivinadas en cada nodo del DOM correspondiente. Es decir, el jugador con más punto, tiene que ir en el podio amarillo. Añade los ids que necesites.
 
 ### Creaciónde la API
 
