@@ -90,11 +90,43 @@
             </div>
         </div>
         <div>
-            <button>
+            <button class ="podium-update">
                 Actualizar Podium
             </button>
         </div>
     </main>
 </body>
+<script>
+    button = document.querySelector('.podium-update');
+    //Click
+    button.addEventListener('click', updatePodium);
+
+    async function updatePodium () {
+        //Call API
+        const response = await fetch('https://score-word-of-the-dat.onrender.com/scores');
+        //Transform data
+        const data = await response.json();
+        console.log(data);
+        whoIsPodium(data);
+    }
+
+    function whoIsPodium(data){
+        //Variable
+        let maxPoints = 0;
+        let MaxPointsIndex;
+
+        console.log(data.sort((a,b)=> b.puntos - a.puntos));
+
+        //Mostramos primero
+        document.querySelector(".first-place > div.player-name").textContent = `${data[0].nombre}`;
+        document.querySelector(".first-place > div.score").textContent = `${data[0].puntos} puntos obtenidos`;
+        document.querySelector(".second-place > div.player-name").textContent = `${data[1].nombre}`;
+        document.querySelector(".second-place > div.score").textContent = `${data[1].puntos} puntos obtenidos`;
+        document.querySelector(".third-place > div.player-name").textContent = `${data[2].nombre}`;
+        document.querySelector(".third-place > div.score").textContent = `${data[2].puntos} puntos obtenidos`;
+
+        
+    }
+</script>
 
 </html>
